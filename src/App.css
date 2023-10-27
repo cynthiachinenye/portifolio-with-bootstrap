@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap');
+
+:root{
+  --primary-white:#fff;
+  --primary-orange:#f9ab00;
+  --primary-dark: rgba(255,255,255,0);
+}
+
+body{
+  font-family: 'Roboto Condesed', sans-serif;
+}
 /* navbar */
 
 .logo{
@@ -7,6 +18,7 @@
 /* menu links */
 nav a .nav-link{
   font-weight:500;
+  font-size:8rem;
   letter-spacing:0.0375rem;
   cursor:pointer;
  
@@ -14,4 +26,31 @@ nav a .nav-link{
 }
 nav ul li{
   text-transform: uppercase;
+}
+nav h1{
+  color:var(--primary-white) !important;
+}
+.navbar-nav > li > a{
+
+    color:var(--primary-white) !important;
+}
+
+.navbar-nav >li > a{
+  margin-right:0.75rem;
+  margin-left:0.75rem;
+  color:var(--primary-white) !important;
+  border-top:0.1875rem solid var(--primary-dark);
+}
+.navbar-brand {
+  max-width:17.25rem;
+  padding: 0 !important;
+  height:6rem !important;
+
+}
+.navbar-nav > li >a.active, .navbar-nav > li > a.active:focus{
+  border-top:0.1875rem solid var(--primary-orange);
+}
+.navbar-nav > li > a:hover{
+  border-top:0.1875rem solid var(--primary-orange);
+
 }
