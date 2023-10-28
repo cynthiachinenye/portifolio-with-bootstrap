@@ -10,16 +10,16 @@ const Header = () => {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings:[ "web Design", "web Development", "Facebook Ads SMM", "Google Ads"],});
+      strings:[ "web Design", "web Development", "Facebook Ads", "Google Ads"],});
      
   },[])
   return (
     <div className='header-wrapper'>
      <div className='main-info'>
      <h1>web development and websites promotions</h1>
-     <span className='ityped-cursor' ref={element}></span>
+     <p  ref={element} ></p>
 
-   
+     <a href='#' className='btn-main-offer'>contact me</a>
     </div>
       
     </div>

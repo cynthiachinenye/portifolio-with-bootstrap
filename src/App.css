@@ -4,6 +4,7 @@
   --primary-white:#fff;
   --primary-orange:#f9ab00;
   --primary-dark: rgba(255,255,255,0);
+  --primary-red:#c90c0c;
 }
 
 body{
@@ -80,6 +81,9 @@ nav h1{
   text-transform:uppercase;
   
 }
+.header-wrapper .main-info p{
+  color:#fff;
+}
 .ityped-cursor{
   animation: blink 1s infinite;
 
@@ -91,5 +95,18 @@ nav h1{
   100%{
     opacity:0;
   }
+
   
+  
+}
+
+/************* HEADER MAIN OFFER BUTTON  **************/
+.btn-main-offer{
+    border:1px solid var(--primary-red);
+    text-transform:uppercase;
+    border-radius:0;
+    padding:0.625rem 0.75rem 0.75rem 0.75rem;
+    color:var(--primary-white);
+    text-decoration:none;
+
 }
