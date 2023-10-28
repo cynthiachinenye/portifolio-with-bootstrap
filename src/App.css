@@ -66,3 +66,17 @@ nav h1{
   height:90vh;
 
 }
+.header-wrapper .main-info{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  text-align:center;
+  font-family: "Roboto Condeed", sans-serif;
+
+}
+.header-wrapper .main-info h1{
+  color:var(--primary-orange);
+  text-transform:uppercase;
+  
+}
