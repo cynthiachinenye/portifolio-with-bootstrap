@@ -51,6 +51,12 @@ nav h1{
   height:6rem !important;
 
 }
+@media (max-width:768px) {
+  .navbar-brand{
+    width:7rem;
+  }
+  
+}
 .navbar-nav > li >a.active, .navbar-nav > li > a.active:focus{
   border-top:0.1875rem solid var(--primary-orange);
 }
@@ -132,7 +138,7 @@ nav h1{
 
 /************* PARTICLES JS **************/
 
-.tsparticles-canvas-el {
+#tsparticles {
   position:absolute;
   height:100vh;
   width:100vw;
@@ -140,7 +146,7 @@ nav h1{
 }
 
 @media(max-width:768px) {
-  .particles-canvas{
+  #tsparticles{
     display:none;
   }
   
