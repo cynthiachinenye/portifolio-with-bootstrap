@@ -16,6 +16,7 @@ const Header = () => {
   return (
     <div className='header-wrapper'>
      <div className='main-info'>
+     <canvas></canvas>
      <h1>web development and websites promotions</h1>
      <p  ref={element} ></p>
 

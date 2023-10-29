@@ -17,6 +17,9 @@ body{
 
 }
 /* menu links */
+nav{
+  z-index:2;
+}
 nav a .nav-link{
   font-weight:500;
   font-size:8rem;
@@ -69,6 +72,11 @@ nav h1{
 }
 .header-wrapper .main-info{
   display:flex;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
   flex-direction: column;
   justify-content: center;
   align-items:center;
@@ -88,16 +96,24 @@ nav h1{
   animation: blink 1s infinite;
 
 }
-@keyframes blink {
+
+@media (max-width:768px) {
+  .main-info h1{
+    font-size: 1.5rem !important;
+  }
+  .ityped-cursor{
+    font-size: 1.3rem !important;
+  }
+  
+}
+
+@keyframes blink{
   50%{
     opacity:1;
   }
   100%{
     opacity:0;
-  }
-
-  
-  
+  }  
 }
 
 /************* HEADER MAIN OFFER BUTTON  **************/
@@ -108,5 +124,25 @@ nav h1{
     padding:0.625rem 0.75rem 0.75rem 0.75rem;
     color:var(--primary-white);
     text-decoration:none;
-
 }
+.btn-main-offer:hover{
+  background-color: var(--primary-red);
+  transition: .2s ease-in-out;
+}
+
+/************* PARTICLES JS **************/
+
+.tsparticles-canvas-el {
+  position:absolute;
+  height:100vh;
+  width:100vw;
+  z-index: 1;
+}
+
+@media(max-width:768px) {
+  .particles-canvas{
+    display:none;
+  }
+  
+}
+
